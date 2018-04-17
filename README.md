@@ -1,55 +1,76 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset// EN">
+# SDP Benchmark Problems from Electronic Structure Calculations
 
-<HTML>
-<HEAD>
-<TITLE>Software</TITLE>
-<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
-<META NAME="author" CONTENT="Mituhiro Fukuda">
-<META NAME="copyright" CONTENT="Mituhiro Fukuda">
-<META NAME="build" CONTENT="2003.10.14">
-</HEAD>
+> This GitHub repository is a "modern" presentation of the original ESC
+> library by Mituhiro Fukuda hosted at
+> http://www.is.titech.ac.jp/~mituhiro/software.html.
+>
+> The original page was last modified on Tuesday, May 2, 2017.
 
-<BODY STYLE="font: normal normal 600 12pt/0.9em Helvetica, Arial, Courier; color: black" LINK="blue" VLINK="red">
-<BODY BACKGROUND="Gifs/sky.jpg">
+> Please refer to the new problem sets available from
+> http://nakatamaho.riken.jp/rdmsdp/sdp_rdm.html,
+> since the data below is obsolete.
 
-<CENTER>
-<IMG SRC="Gifs/S.gif"><IMG SRC="Gifs/o.gif"><IMG SRC="Gifs/f.gif"><IMG SRC="Gifs/t.gif"><IMG SRC="Gifs/w.gif"><IMG SRC="Gifs/a.gif"><IMG SRC="Gifs/r.gif"><IMG SRC="Gifs/e.gif"></CENTER>
+The following set of SDPs are the actual ones solved in [[1]](#paper).  The
+problem consists of determining the ground state energy of an N-electron system
+in a given external potential through the so-called Reduced Density Matrix
+Method.  A detailed description on the formulation be found in:
 
-<P STYLE="font-size: 18pt; color: red"> New </P><P STYLE="text-indent: 20pt">Please refer to the new problem sets available from <A HREF="http://nakatamaho.riken.jp/rdmsdp/sdp_rdm.html" TARGET="Page2">here</A>, since the data below is obsolete.</P>
+<a id="paper">
+> Z. Zhao, B. J. Braams, M. Fukuda, M. L. Overton, and J. K. Percus,
+> "The reduced density matrix method for electronic structure calculations and
+> the role of three-index representability conditions,"
+> *The Journal of Chemical Physics*, **120** (2004), pp. 2095-2104.
 
-<HR>
+[The sizes of SDPs](#sizes) depend on the size of the "spin-orbital basis",
+`r`, which governs the discretization of the continuous wave function, but do
+not depend on the number of electrons `N` of the system.  (Accurate electronic
+structure calculations will have `r >= 2N`).
 
-<IMG SRC="Gifs/fructose.gif"><SPAN STYLE="color: blueviolet"><FONT SIZE="+1">SDP Benchmark Problems from Electronic Structure Calculations</FONT></SPAN>
+[The Benchmark SDPs](#problems) are in
+[SDPA format](http://plato.asu.edu/ftp/sdpa_format.txt) and are divided
+according to the basis size `r`.  See [sizes of corresponding SDPs](#sizes).
 
-<P>The following set of SDPs are the actual ones solved in <A HREF="#paper">[1]</A>. The problem consists of determining the ground state energy of an N-electron system in a given external potential through the so-called Reduced Density Matrix Method. A detailed description on the formulation be found in:</P>
+In our paper [[1]](#paper), we present several SDP calculations for each
+molecule, but here we only provide the data for the most accurate SDP
+calculations: those with the `P`, `Q`, `G`, `T1` and `T2` N-representability
+conditions.  Our results are given in Tables 1 and 2 in [[1]](#paper).
 
-<A NAME="paper">
-<P STYLE="text-indent: 20pt"><SPAN STYLE="color: blueviolet">[1]</SPAN> Z. Zhao, B. J. Braams, M. Fukuda, M. L. Overton, and J. K. Percus, "The reduced density matrix method for electronic structure calculations and the role of three-index representability conditions," <I>The Journal of Chemical Physics</I>, <B>120</B> (2004), pp. 2095-2104.</P>
-
-<P><A HREF="#sizes">The sizes of SDPs</A> depend on the size of the "spin-orbital basis", r, which governs the discretization of the continuous wave function, but do not depend on the number of electrons N of the system. (Accurate electronic structure calculations will have r >= 2N).</P>
-
-<P><A HREF="#problems">The Benchmark SDPs</A> are in <A HREF="http://plato.asu.edu/ftp/sdpa_format.txt" TARGET="Page2">SDPA format</A> and are divided according to the basis size r. See <A HREF="#sizes">sizes of corresponding SDPs</A>.</P>
-
-<P>In our paper <A HREF="#paper">[1]</A>, we present several SDP calculations for each molecule, but here we only provide the data for the most accurate SDP calculations: those with the P, Q, G, T1 and T2 N-representability conditions. Our results are given in Tables 1 and 2 in <A HREF="#paper">[1]</A>.</P>
-
-<P>To obtain the energies displayed in Tables 1 and 2 under column $E_{PQGT1T2}$ <A HREF="#paper">[1]</A>, it is necessary to add the <A HREF="#repulsion">nuclear repulsion energies</A> to the optimal values of each corresponding SDP. The important information we want to extract from solving the SDPs are the optimal value, and the dual vector variable (which provides the One-Reduced Density Matrix and the Two-Reduced Density Matrix). The applications typically require 4 digits of accuracy after the period for the optimal values (which means 6 or 7 digits of accuracy in total).</P>
+To obtain the energies displayed in Tables 1 and 2 under column `E_{PQGT1T2}`
+[[1]](#paper), it is necessary to add the
+[nuclear repulsion energies](#repulsion) to the optimal values of each
+corresponding SDP.  The important information we want to extract from solving
+the SDPs are the optimal value, and the dual vector variable (which provides
+the One-Reduced Density Matrix and the Two-Reduced Density Matrix).  The
+applications typically require 4 digits of accuracy after the period for the
+optimal values (which means 6 or 7 digits of accuracy in total).
 
 <A NAME="problems">
-<SPAN STYLE="color: blueviolet">Electronic Structure Calculation Problems (47 problems)</SPAN>
+## Electronic Structure Calculation Problems (47 problems)
 
-<P STYLE="text-indent: 20pt"> <A HREF="http://www.is.titech.ac.jp/~mituhiro/Fermion/r12.tar">15 SDPs with r=12</A> (4.6MB)</P>
+- [15 SDPs with `r = 12`](http://www.is.titech.ac.jp/~mituhiro/Fermion/r12.tar)
+  (4.6 MB)
 
-<P STYLE="text-indent: 20pt"> <A HREF="http://www.is.titech.ac.jp/~mituhiro/Fermion/r14.tar">6 SDPs with r=14</A> (4.0MB)</P>
+- [6 SDPs with `r = 14`](http://www.is.titech.ac.jp/~mituhiro/Fermion/r14.tar)
+  (4.0 MB)
 
-<P STYLE="text-indent: 20pt"> <A HREF="http://www.is.titech.ac.jp/~mituhiro/Fermion/r16.tar">2 SDPs with r=16</A> (2.6MB)</P>
+- [2 SDPs with `r = 16`](http://www.is.titech.ac.jp/~mituhiro/Fermion/r16.tar)
+  (2.6MB)
 
-<P STYLE="text-indent: 20pt"> <A HREF="http://www.is.titech.ac.jp/~mituhiro/Fermion/r20.tar">24 SDPs with r=20</A> (94.2MB)</P>
+- [24 SDPs with `r = 20`](http://www.is.titech.ac.jp/~mituhiro/Fermion/r20.tar)
+  (94.2MB)
 
-<P>(Note: The above set of problems were replaced on December 26, 2003 because the function "fromsdpa" from <A HREF="http://sedumi.ie.lehigh.edu/" TARGET="Page2">SeDuMi 1.05 (currently, version 1.3)</A> assumes that the data matrices in <A HREF="http://plato.asu.edu/ftp/sdpa_format.txt" TARGET="Page2">SDPA format</A> are ordered. We thank <A HREF="http://plato.la.asu.edu/" TARGET="Page2">Hans D. Mittelmann</A> for providing the new set of problems readable from all the SDP codes).</P>
+> Note: The above set of problems were replaced on December 26, 2003
+> because the function `fromsdpa` from
+> [SeDuMi 1.05 (currently, version 1.3)](http://sedumi.ie.lehigh.edu/)
+> assumes that the data matrices in
+> [SDPA format](http://plato.asu.edu/ftp/sdpa_format.txt) are ordered.
+> We thank [Hans D. Mittelmann](http://plato.la.asu.edu/) for providing
+> the new set of problems readable from all the SDP codes.
 
-<A NAME="sizes">
+<a id="sizes">
+## Sizes of SDPs
+
 <TABLE BORDER="2" BGCOLOR="white">
-<CAPTION ALIGN="top" STYLE="color: blueviolet">Sizes of SDPs</CAPTION>
 <TR><TH>r</TH><TH># equality constraints</TH><TH>Size of block matrices</TH><TH>Size of the diagonal matrix</TH></TR>
 <TR><TH>12</TH><TD ALIGN="center">948</TD><TD>6, 6, 6, 6, 15, 15, 36, 15, 15, 36, 72, 36, 36, 20, 90, 90, 20, 306, 306, 90, 90</TD><TD ALIGN="center">94</TD></TR>
 <TR><TH>14</TH><TD ALIGN="center">1743</TD><TD>7, 7, 7, 7, 21, 21, 49, 21, 21, 49, 98, 49, 49, 35, 147, 147, 35, 490, 490, 147, 147</TD><TD ALIGN="center">122</TD></TR>
@@ -57,12 +78,11 @@
 <TR><TH>20</TH><TD ALIGN="center">7230</TD><TD>10, 10, 10, 10, 45, 45, 100, 45, 45, 100, 200, 100, 100, 120, 450, 450, 120, 1450, 1450, 450, 450</TD><TD ALIGN="center">230</TD></TR>
 </TABLE>
 
-<BR>
 
-<A NAME="repulsion">
-<CENTER>
+<a id="repulsion">
+## Repulsion Energies (in Hartree units)
+
 <TABLE BORDER="2" BGCOLOR="white">
-<CAPTION ALIGN="top" STYLE="color: blueviolet">Repulsion Energies (in Hartree units)</CAPTION>
 <TR><TH>System</TH><TH>N</TH><TH>r</TH><TH>Repulsion Energy</TH></TR>
 <TR><TH>LiH</TH><TD ALIGN="right">4</TD><TD>12</TD><TD ALIGN="right">0.9948810848</TD></TR>
 <TR><TH>BeH</TH><TD ALIGN="right">5</TD><TD>12</TD><TD ALIGN="right">1.5772794307</TD></TR>
@@ -112,15 +132,6 @@
 <TR><TH>NF</TH><TD>16</TD><TD>20</TD><TD ALIGN="right">25.3156402817</TD></TR>
 <TR><TH>HS+</TH><TD>16</TD><TD>20</TD><TD ALIGN="right">6.1603870664</TD></TR>
 </TABLE>
-</CENTER>
 
-<BR>
-
-For inquires about information posted here, mail to mituhiro followed by @is.titech.ac.jp
-
-<HR>
-
-<FONT SIZE="-1">This page was last modified on Tuesday, May 2, 2017.</FONT>
-
-</BODY>
-</HTML>
+> For inquires about information posted here, mail to `mituhiro`
+> followed by `@is.titech.ac.jp`.
