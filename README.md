@@ -71,68 +71,67 @@ optimal values (which means 6 or 7 digits of accuracy in total).
 ## Sizes of SDPs
 <a id="sizes"></a>
 
-<TABLE BORDER="2" BGCOLOR="white">
-<TR><TH>r</TH><TH># equality constraints</TH><TH>Size of block matrices</TH><TH>Size of the diagonal matrix</TH></TR>
-<TR><TH>12</TH><TD ALIGN="center">948</TD><TD>6, 6, 6, 6, 15, 15, 36, 15, 15, 36, 72, 36, 36, 20, 90, 90, 20, 306, 306, 90, 90</TD><TD ALIGN="center">94</TD></TR>
-<TR><TH>14</TH><TD ALIGN="center">1743</TD><TD>7, 7, 7, 7, 21, 21, 49, 21, 21, 49, 98, 49, 49, 35, 147, 147, 35, 490, 490, 147, 147</TD><TD ALIGN="center">122</TD></TR>
-<TR><TH>16</TH><TD ALIGN="center">2964</TD><TD>8, 8, 8, 8, 28, 28, 64, 28, 28, 64, 128, 64, 64, 56, 224, 224, 56, 736, 736, 224, 224</TD><TD ALIGN="center">154</TD></TR>
-<TR><TH>20</TH><TD ALIGN="center">7230</TD><TD>10, 10, 10, 10, 45, 45, 100, 45, 45, 100, 200, 100, 100, 120, 450, 450, 120, 1450, 1450, 450, 450</TD><TD ALIGN="center">230</TD></TR>
-</TABLE>
+| `r` | # equality constraints | Size of block matrices | Size of the diagonal matrix |
+| --- | :--------------------: | ------------------------------------------------------------------------------------------------- | :-: |
+|  12 |                    948 |  6,  6,  6,  6, 15, 15,  36, 15, 15,  36,  72,  36,  36,  20,  90,  90,  20,  306,  306,  90,  90 |  94 |
+|  14 |                   1743 |  7,  7,  7,  7, 21, 21,  49, 21, 21,  49,  98,  49,  49,  35, 147, 147,  35,  490,  490, 147, 147 | 122 |
+|  16 |                   2964 |  8,  8,  8,  8, 28, 28,  64, 28, 28,  64, 128,  64,  64,  56, 224, 224,  56,  736,  736, 224, 224 | 154 |
+|  20 |                   7230 | 10, 10, 10, 10, 45, 45, 100, 45, 45, 100, 200, 100, 100, 120, 450, 450, 120, 1450, 1450, 450, 450 | 230 |
 
 
 ## Repulsion Energies (in Hartree units)
 <a id="repulsion"></a>
 
-<TABLE BORDER="2" BGCOLOR="white">
-<TR><TH>System</TH><TH>N</TH><TH>r</TH><TH>Repulsion Energy</TH></TR>
-<TR><TH>LiH</TH><TD ALIGN="right">4</TD><TD>12</TD><TD ALIGN="right">0.9948810848</TD></TR>
-<TR><TH>BeH</TH><TD ALIGN="right">5</TD><TD>12</TD><TD ALIGN="right">1.5772794307</TD></TR>
-<TR><TH>BH+</TH><TD ALIGN="right">5</TD><TD>12</TD><TD ALIGN="right">2.1782219849</TD></TR>
-<TR><TH>BH</TH><TD ALIGN="right">6</TD><TD>12</TD><TD ALIGN="right">2.1469378814</TD></TR>
-<TR><TH>CH+</TH><TD ALIGN="right">6</TD><TD>12</TD><TD ALIGN="right">2.8075545972</TD></TR>
-<TR><TH>CH</TH><TD ALIGN="right">7</TD><TD>12</TD><TD ALIGN="right">2.8351312564</TD></TR>
-<TR><TH>CH-</TH><TD ALIGN="right">8</TD><TD>12</TD><TD ALIGN="right">2.9398736056</TD></TR>
-<TR><TH>NH+</TH><TD ALIGN="right">7</TD><TD>12</TD><TD ALIGN="right">3.4619072364</TD></TR>
-<TR><TH>NH</TH><TD ALIGN="right">8</TD><TD>12</TD><TD ALIGN="right">3.5748318307</TD></TR>
-<TR><TH>NH-</TH><TD ALIGN="right">9</TD><TD>12</TD><TD ALIGN="right">3.5379567746</TD></TR>
-<TR><TH>OH+</TH><TD ALIGN="right">8</TD><TD>12</TD><TD ALIGN="right">4.1145086908</TD></TR>
-<TR><TH>OH</TH><TD ALIGN="right">9</TD><TD>12</TD><TD ALIGN="right">4.3656986614</TD></TR>
-<TR><TH>OH-</TH><TD ALIGN="right">10</TD><TD>12</TD><TD ALIGN="right">4.3643484454</TD></TR>
-<TR><TH>HF+</TH><TD ALIGN="right">9</TD><TD>12</TD><TD ALIGN="right">4.7578374036</TD></TR>
-<TR><TH>HF</TH><TD ALIGN="right">10</TD><TD>12</TD><TD ALIGN="right">5.1948028370</TD></TR>
-<TR><TH>BH2</TH><TD ALIGN="right">7</TD><TD>14</TD><TD ALIGN="right">4.7269615539</TD></TR>
-<TR><TH>CH2(1A1)</TH><TD ALIGN="right">8</TD><TD>14</TD><TD ALIGN="right">6.0430274001</TD></TR>
-<TR><TH>CH2(3B1)</TH><TD ALIGN="right">8</TD><TD>14</TD><TD ALIGN="right">6.1757874267</TD></TR>
-<TR><TH>NH2</TH><TD ALIGN="right">9</TD><TD>14</TD><TD ALIGN="right">7.5640948299</TD></TR>
-<TR><TH>H2O+</TH><TD ALIGN="right">9</TD><TD>14</TD><TD ALIGN="right">8.7976559250</TD></TR>
-<TR><TH>H2O</TH><TD>10</TD><TD>14</TD><TD ALIGN="right">9.1949655162</TD></TR>
-<TR><TH>NH3</TH><TD>10</TD><TD>16</TD><TD ALIGN="right">11.9103794143</TD></TR>
-<TR><TH>H3O+</TH><TD>10</TD><TD>16</TD><TD ALIGN="right">14.0016864732</TD></TR>
-<TR><TH>Li2</TH><TD ALIGN="right">6</TD><TD>20</TD><TD ALIGN="right">1.7818082386</TD></TR>
-<TR><TH>B2</TH><TD>10</TD><TD>20</TD><TD ALIGN="right">8.3203969969</TD></TR>
-<TR><TH>C2+</TH><TD>11</TD><TD>20</TD><TD ALIGN="right"> 13.5783185773</TD></TR>
-<TR><TH>C2</TH><TD>12</TD><TD>20</TD><TD ALIGN="right">15.3322985626</TD></TR>
-<TR><TH>C2-</TH><TD>13</TD><TD>20</TD><TD ALIGN="right">15.0239597508</TD></TR>
-<TR><TH>LiF</TH><TD>12</TD><TD>20</TD><TD ALIGN="right">9.1359970094</TD></TR>
-<TR><TH>BeO</TH><TD>12</TD><TD>20</TD><TD ALIGN="right">12.7234743166</TD></TR>
-<TR><TH>NaH</TH><TD>12</TD><TD>20</TD><TD ALIGN="right">3.0841102782</TD></TR>
-<TR><TH>BeF</TH><TD>13</TD><TD>20</TD><TD ALIGN="right">13.9973408993</TD></TR>
-<TR><TH>BO</TH><TD>13</TD><TD>20</TD><TD ALIGN="right">17.5733416023</TD></TR>
-<TR><TH>N2+</TH><TD>13</TD><TD>20</TD><TD ALIGN="right">23.2261601585</TD></TR>
-<TR><TH>N2</TH><TD>14</TD><TD>20</TD><TD ALIGN="right">23.6218321955</TD></TR>
-<TR><TH>CO+</TH><TD>13</TD><TD>20</TD><TD ALIGN="right">22.7786816895</TD></TR>
-<TR><TH>CO</TH><TD>14</TD><TD>20</TD><TD ALIGN="right">22.5121935230</TD></TR>
-<TR><TH>BF</TH><TD>14</TD><TD>20</TD><TD ALIGN="right">18.8617633307</TD></TR>
-<TR><TH>AlH</TH><TD>14</TD><TD>20</TD><TD ALIGN="right">4.1743350953</TD></TR>
-<TR><TH>CF</TH><TD>15</TD><TD>20</TD><TD ALIGN="right">22.4686046910</TD></TR>
-<TR><TH>O2+</TH><TD>15</TD><TD>20</TD><TD ALIGN="right">30.3362091867</TD></TR>
-<TR><TH>O2</TH><TD>16</TD><TD>20</TD><TD ALIGN="right">28.0474898021</TD></TR>
-<TR><TH>SiH</TH><TD>15</TD><TD>20</TD><TD ALIGN="right">4.8749631414</TD></TR>
-<TR><TH>SiH-</TH><TD>16</TD><TD>20</TD><TD ALIGN="right">5.0261068426</TD></TR>
-<TR><TH>NO-</TH><TD>16</TD><TD>20</TD><TD ALIGN="right">23.3154413407</TD></TR>
-<TR><TH>NF</TH><TD>16</TD><TD>20</TD><TD ALIGN="right">25.3156402817</TD></TR>
-<TR><TH>HS+</TH><TD>16</TD><TD>20</TD><TD ALIGN="right">6.1603870664</TD></TR>
-</TABLE>
+|  System  | `N` | `r` | Repulsion Energy |
+| -------- | --- | --- | ---------------: |
+| LiH      |   4 |  12 |     0.9948810848 |
+| BeH      |   5 |  12 |     1.5772794307 |
+| BH+      |   5 |  12 |     2.1782219849 |
+| BH       |   6 |  12 |     2.1469378814 |
+| CH+      |   6 |  12 |     2.8075545972 |
+| CH       |   7 |  12 |     2.8351312564 |
+| CH-      |   8 |  12 |     2.9398736056 |
+| NH+      |   7 |  12 |     3.4619072364 |
+| NH       |   8 |  12 |     3.5748318307 |
+| NH-      |   9 |  12 |     3.5379567746 |
+| OH+      |   8 |  12 |     4.1145086908 |
+| OH       |   9 |  12 |     4.3656986614 |
+| OH-      |  10 |  12 |     4.3643484454 |
+| HF+      |   9 |  12 |     4.7578374036 |
+| HF       |  10 |  12 |     5.1948028370 |
+| BH2      |   7 |  14 |     4.7269615539 |
+| CH2(1A1) |   8 |  14 |     6.0430274001 |
+| CH2(3B1) |   8 |  14 |     6.1757874267 |
+| NH2      |   9 |  14 |     7.5640948299 |
+| H2O+     |   9 |  14 |     8.7976559250 |
+| H2O      |  10 |  14 |     9.1949655162 |
+| NH3      |  10 |  16 |    11.9103794143 |
+| H3O+     |  10 |  16 |    14.0016864732 |
+| Li2      |   6 |  20 |     1.7818082386 |
+| B2       |  10 |  20 |     8.3203969969 |
+| C2+      |  11 |  20 |    13.5783185773 |
+| C2       |  12 |  20 |    15.3322985626 |
+| C2-      |  13 |  20 |    15.0239597508 |
+| LiF      |  12 |  20 |     9.1359970094 |
+| BeO      |  12 |  20 |    12.7234743166 |
+| NaH      |  12 |  20 |     3.0841102782 |
+| BeF      |  13 |  20 |    13.9973408993 |
+| BO       |  13 |  20 |    17.5733416023 |
+| N2+      |  13 |  20 |    23.2261601585 |
+| N2       |  14 |  20 |    23.6218321955 |
+| CO+      |  13 |  20 |    22.7786816895 |
+| CO       |  14 |  20 |    22.5121935230 |
+| BF       |  14 |  20 |    18.8617633307 |
+| AlH      |  14 |  20 |     4.1743350953 |
+| CF       |  15 |  20 |    22.4686046910 |
+| O2+      |  15 |  20 |    30.3362091867 |
+| O2       |  16 |  20 |    28.0474898021 |
+| SiH      |  15 |  20 |     4.8749631414 |
+| SiH-     |  16 |  20 |     5.0261068426 |
+| NO-      |  16 |  20 |    23.3154413407 |
+| NF       |  16 |  20 |    25.3156402817 |
+| HS+      |  16 |  20 |     6.1603870664 |
+
 
 > For inquires about information posted here, mail to `mituhiro`
 > followed by `@is.titech.ac.jp`.
