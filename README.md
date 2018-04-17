@@ -20,6 +20,7 @@ Method.  A detailed description on the formulation be found in:
 > "The reduced density matrix method for electronic structure calculations and
 > the role of three-index representability conditions,"
 > *The Journal of Chemical Physics*, **120** (2004), pp. 2095-2104.
+> [DOI: 10.1063/1.1636721](https://doi.org/10.1063/1.1636721)
 
 [The sizes of SDPs](#sizes) depend on the size of the "spin-orbital basis",
 `r`, which governs the discretization of the continuous wave function, but do
