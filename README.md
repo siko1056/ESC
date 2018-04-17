@@ -15,7 +15,7 @@ problem consists of determining the ground state energy of an N-electron system
 in a given external potential through the so-called Reduced Density Matrix
 Method.  A detailed description on the formulation be found in:
 
-<a id="paper">
+> <a id="paper"></a>
 > Z. Zhao, B. J. Braams, M. Fukuda, M. L. Overton, and J. K. Percus,
 > "The reduced density matrix method for electronic structure calculations and
 > the role of three-index representability conditions,"
@@ -44,8 +44,9 @@ the One-Reduced Density Matrix and the Two-Reduced Density Matrix).  The
 applications typically require 4 digits of accuracy after the period for the
 optimal values (which means 6 or 7 digits of accuracy in total).
 
-<A NAME="problems">
+
 ## Electronic Structure Calculation Problems (47 problems)
+<a NAME="problems"></a>
 
 - [15 SDPs with `r = 12`](http://www.is.titech.ac.jp/~mituhiro/Fermion/r12.tar)
   (4.6 MB)
@@ -67,8 +68,8 @@ optimal values (which means 6 or 7 digits of accuracy in total).
 > We thank [Hans D. Mittelmann](http://plato.la.asu.edu/) for providing
 > the new set of problems readable from all the SDP codes.
 
-<a id="sizes">
 ## Sizes of SDPs
+<a id="sizes"></a>
 
 <TABLE BORDER="2" BGCOLOR="white">
 <TR><TH>r</TH><TH># equality constraints</TH><TH>Size of block matrices</TH><TH>Size of the diagonal matrix</TH></TR>
@@ -79,8 +80,8 @@ optimal values (which means 6 or 7 digits of accuracy in total).
 </TABLE>
 
 
-<a id="repulsion">
 ## Repulsion Energies (in Hartree units)
+<a id="repulsion"></a>
 
 <TABLE BORDER="2" BGCOLOR="white">
 <TR><TH>System</TH><TH>N</TH><TH>r</TH><TH>Repulsion Energy</TH></TR>
