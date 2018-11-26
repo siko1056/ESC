@@ -2,7 +2,7 @@
 
 > This GitHub repository is a "modern" presentation of the original ESC
 > library by Mituhiro Fukuda hosted at
-> http://www.is.titech.ac.jp/~mituhiro/software.html.
+> http://mf.c.titech.ac.jp/mituhiro/software.html.
 >
 > The original page was last modified on Tuesday, May 2, 2017.
 
